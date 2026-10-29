@@ -1,0 +1,23 @@
+# Create client package.json
+$content = '{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.0"
+  }
+}'
+Set-Content -Path 'C:\projects\wt\experiments\exp10\CA2\client\package.json' -Value $content -Encoding UTF8
+Write-Host 'client package done'
